@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ventes de voyages</title>
+  
+  <style>
+    /* Ajoutez ici votre CSS pour styliser votre site */
+    .destination {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .destination__card {
+      width: 30%;
+      padding: 1rem;
+      text-align: center;
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+  <header>   
+    <nav class="navbar">
+   <a href="#" class="logo">ADVENTURE</a>
+   <div class="nav-links">
+       <ul>
+       <li class="active"><a href="#menu1">Acceuil</a></li>
+       <li><a href="#menu2">Destinations</a></li>
+       <li><a href="#menu3">Actualités</a></li>
+       <li><a href="#menu4">Contact</a></li>
+     </ul>
+   </div>
+       </nav>
+     </header>
+  <main>
+    <section class="destination">
+      <!-- Boucle sur les différentes destinations pour afficher les cartes -->
+      <div class="destination__card">
+        <h2>Destination 1</h2>
+        <img src="image-destination-1.jpg" alt="Image de la destination 1">
+        <p>Description de la destination 1</p>
+        <button>Réserver</button>
+      </div>
+      <div class="destination__card">
+        <h2>Destination 2</h2>
+        <img src="image-destination-2.jpg" alt="Image de la destination 2">
+        <p>Description de la destination 2</p>
+        <button>Réserver</button>
+      </div>
+      <!-- Ajoutez autant de cartes que nécessaire -->
+    </section>
+  </main>
+  <footer>
+    <p>&copy; Ventes de voyages 2023</p>
+  </footer>
+  <script>
+    // Ajoutez ici votre JavaScript pour ajouter de la fonctionnalité
+    const buttons = document.querySelectorAll("button");
+    buttons.forEach((button) => {
+      button.addEventListener("click", (event) => {
+        alert("Réservation effectuée avec succès!");
+      });
+    });
+  </script>
+</body>
+</html>
+

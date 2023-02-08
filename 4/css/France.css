@@ -1,0 +1,333 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+  }
+  
+  body {
+      font-family: 'Poppins';
+      background-image: url(/Images/imagefondecran.jpg);
+      background-size: cover;
+  }
+  
+  header {
+      height: 20vh;
+      width: 100vw;
+      background-color: rgba(0, 0, 0, 0.3);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding:  50px;
+      box-sizing: border-box;
+  }
+
+  
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .navbar a {
+    color: white;
+  }
+  
+  .navbar .logo {
+   font-size: 1.7em;
+   font-weight: bold;
+   color: rgb(255, 255, 255);
+  }
+  
+  .navbar .nav-links ul {
+  display: flex;
+  font-size: 1.5em;
+  }
+  
+  .navbar .nav-links ul li {
+    margin: 0 25px;
+    }
+  
+  .navbar .nav-links ul li.active a {
+      color: red;
+      font-weight: 600;
+    }
+  
+    main {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: row;
+      padding: 1rem;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 90px;
+      color: rgb(70, 70, 70);
+    }
+
+    p {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .riad-container {
+      height: 100%;
+      width: 100%;
+    }
+
+    .riad-header {
+      height: 25%;
+      width: 100%;
+      background-size: cover;
+      background-position: center;
+    }
+    
+  header h1 {
+    margin: 0;
+    color: white;
+  }
+
+  h3 {
+    color: rgb(255, 0, 0);
+  }
+  
+
+  .riad {
+    width: 100%;
+    height: 100%;
+  }
+
+  .riad__card {
+    height: 100%;
+    width: 20%;
+    text-align: center;
+    display: inline-block;
+    margin: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: rgba(255, 255, 255, 0.623);
+    border-radius: 10px;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .riad__card h2 {
+    background-image: url(/Images/france1.webp);
+    background-size: cover;  /* ajuste la taille de l'image à la taille de l'élément */
+    /*background-position-y: bottom;*/
+    width: 100%;
+    padding: 70px 0;
+    color: rgb(254, 20, 20);
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 10px 10px 0 0 ;
+    opacity: 0.9;
+    height: 180px;
+  }
+  
+
+  .riad2__card {
+    height: 100%;
+    width: 20%;
+    text-align: center;
+    display: inline-block;
+    margin: 20px;
+    margin-left: 0%;
+    margin-right: 10%;
+    background-color: rgba(255, 255, 255, 0.623);
+    border-radius: 10px;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .riad2__card h2 {
+    background-image: url(/Images/france2.webp);
+    background-size: cover;  /* ajuste la taille de l'image à la taille de l'élément */
+    width: 100%;
+    padding: 70px 0;
+    color: rgb(245, 1, 164);
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 10px 10px 0 0 ;
+    opacity: 0.9;
+    height: 180px;
+    position: right;
+  }
+
+  .riad3__card {
+    height: 100%;
+    width: 20%;
+    text-align: center;
+    display: inline-block;
+    margin: 20px;
+    margin-left: 0%;
+    margin-right: 0%;
+    background-color: rgba(255, 255, 255, 0.623);
+    border-radius: 10px;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .riad3__card h2 {
+    background-image: url(/Images/france3.webp);
+    background-size: cover;  /* ajuste la taille de l'image à la taille de l'élément */
+    width: 100%;
+    padding: 70px 0;
+    color: rgb(245, 1, 164);
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 10px 10px 0 0 ;
+    opacity: 0.9;
+    height: 180px;
+    position: right;
+  }
+
+  .riadd1-container {
+    height: 100%;
+    width: 100%;
+  }
+
+  .riadd1-header {
+    height: 25%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+  
+header h1 {
+  margin: 0;
+}
+
+
+.riadd1 {
+  width: 100%;
+  height: 100%;
+}
+
+.riadd1__card {
+  height: 100%;
+
+  width: 20%;
+  text-align: center;
+  display: inline-block;
+  margin: 20px;
+  margin-left: 10%;
+  margin-right: 0%;
+  background-color: rgba(255, 255, 255, 0.623);
+  border-radius: 10px;
+  position: relative;
+  z-index: 2;
+}
+
+.riadd1__card h2 {
+  background-image: url(/Images/Riad5.webp);
+  background-size: cover;  /* ajuste la taille de l'image à la taille de l'élément */
+  /*background-position-y: bottom;*/
+  width: 100%;
+  padding: 70px 0;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  box-sizing: border-box;
+  border-radius: 10px 10px 0 0 ;
+  opacity: 0.9;
+  height: 180px;
+}
+
+.riadd2 {
+  width: 100%;
+  height: 100%;
+}
+
+.riadd2__card {
+  height: 100%;
+
+  width: 20%;
+  text-align: center;
+  display: inline-block;
+  margin: 20px;
+  margin-left: 10%;
+  margin-right: 0%;
+  background-color: rgba(255, 255, 255, 0.623);
+  border-radius: 10px;
+  position: relative;
+  z-index: 2;
+}
+
+.riadd2__card h2 {
+  background-image: url(/Images/riad1.webp);
+  background-size: cover;  /* ajuste la taille de l'image à la taille de l'élément */
+  /*background-position-y: bottom;*/
+  width: 100%;
+  padding: 70px 0;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  box-sizing: border-box;
+  border-radius: 10px 10px 0 0 ;
+  opacity: 0.9;
+  height: 180px;
+}
+
+.riadd3 {
+  width: 100%;
+  height: 100%;
+}
+
+.riadd3__card {
+  height: 100%;
+
+  width: 20%;
+  text-align: center;
+  display: inline-block;
+  margin: 20px;
+  margin-left: 10%;
+  margin-right: 0%;
+  background-color: rgba(255, 255, 255, 0.623);
+  border-radius: 10px;
+  position: relative;
+  z-index: 2;
+}
+
+.riadd3__card h2 {
+  background-image: url(/Images/riad1.webp);
+  background-size: cover;  /* ajuste la taille de l'image à la taille de l'élément */
+  /*background-position-y: bottom;*/
+  width: 100%;
+  padding: 70px 0;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  box-sizing: border-box;
+  border-radius: 10px 10px 0 0 ;
+  opacity: 0.9;
+  height: 180px;
+}
+
+  button {
+    background-color: #333;
+    border: none;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  button:hover {
+    cursor: pointer;
+    background-color: #555;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+    bottom: 0;
+}

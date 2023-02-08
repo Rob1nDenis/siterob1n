@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ventes de voyages</title>
+  <link rel="stylesheet" href="/css/France.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+    <h1>ADVENTURE by Robins</h1>
+    <div class="nav-links">
+      <ul>
+      <li class="active"><a href="/Index.html">Acceuil</a></li>
+      <li><a href="#menu2">Destinations</a></li>
+      <li><a href="#menu3">Actualités</a></li>
+      <li><a href="#menu4">Contact</a></li>
+    </ul>
+    
+  </div>
+</nav>
+  </header>
+  <style>
+    .nav-links a.active {
+      color: red;
+    }
+  </style>
+  
+  <main>
+    <div class="riad">
+      <!-- Boucle sur les différentes destinations pour afficher les cartes -->
+      <div class="riad__card">
+        <h2></h2>
+        <p>La Villa Californienne</p>
+          <p>8 voyageurs - 4 chambres - 4 lits - 2 salles de bain</p>
+        <a href="https://www.airbnb.fr/rooms/617312746407269096?adults=8&children=0&infants=0&pets=0&check_in=2023-07-29&check_out=2023-08-06&source_impression_id=p3_1675877191_U4jeMKpk%2FDCUdlzl" target="_blank">
+        <button>Decouvrir la Villa</button></a>
+      </div>
+
+        <div class="riad2__card">
+          <h2></h2>
+          <p>Villa Modu</p>
+          <p>8 voyageurs - 4 chambres - 4 lits - 1 salle de bain</p>
+          <a href="https://www.airbnb.fr/rooms/49925759?adults=8&children=0&infants=0&pets=0&check_in=2023-07-29&check_out=2023-08-06&source_impression_id=p3_1675877321_bfZzwwj9fNRUpIu5" target="_blank">
+        <button>Decouvrir la Villa</button></a>
+        </div>
+
+        <div class="riad3__card">
+          <h2></h2>
+          <p>La Grange des Anges</p>
+          <p>8 voyageurs - 4 chambres - 8 lits - 4 salles de bain</p>
+          <h3>Coup de coeur de la redaction</h3>
+          <a href="https://www.airbnb.fr/rooms/22681968?adults=8&category_tag=Tag%3A8159&check_in=2023-07-29&check_out=2023-08-06&source_impression_id=p3_1675877636_NFMd6U1vyrwStT%2BM" target="_blank">
+        <button>Decouvrir la Villa</button></a>
+      </div>
+
+      *{
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        list-style: none;
+      }
+      
+      body {
+          font-family: 'Poppins';
+          background-image: url(/Images/imagefondecran.jpg);
+          background-size: cover;
+      }
+      
+      header {
+          height: 20vh;
+          width: 100vw;
+          background-color: rgba(255, 255, 255, 0.38);
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding:  50px;
+          box-sizing: border-box;
+      }
+    
+      footer {
+        width: 100%; /* pour augmenter la largeur à 100% de la page */
+        position: absolute; /* pour placer le footer en position absolue */
+        bottom: 0; /* pour placer le footer en bas de la page */
+      }
+      
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+      }
+      
+      .navbar a {
+        color: white;
+      }
+      
+      .navbar .logo {
+       font-size: 1.7em;
+       font-weight: bold;
+       color: rgb(253, 253, 253);
+      }
+      
+      .navbar .nav-links ul {
+      display: flex;
+      font-size: 1.5em;
+      }
+      
+      .navbar .nav-links ul li {
+        margin: 0 25px;
+        }
+      
+      .navbar .nav-links ul li.active a {
+          color: red;
+          font-weight: 600;
+        }
+      
+        main {
+          display: flex;
+          justify-content: flex-start;
+          align-items: flex-start;
+          flex-direction: row;
+          padding: 1rem;
+        }
+    
+        h2 {
+          text-align: center;
+          margin-bottom: 90px;
+          color: rgb(255, 255, 255);
+        }
+    
+        p {
+          text-align: center;
+          margin-bottom: 50px;
+        }
+    
+        .destination-container {
+          height: 100%;
+          width: 100%;
+        }
+    
+        .destination-header {
+          height: 25%;
+          width: 100%;
+          background-size: cover;
+          background-position: center;
+        }
+        
+      header h1 {
+        margin: 0;
+        color: white;
+      }
+      
+    
+      .destination {
+        width: 100%;
+        height: 100%;
+      }
+    
+      .destination__card {
+        height: 100%;
+        width: 20%;
+        text-align: center;
+        display: inline-block;
+        margin: 20px;
+        margin-left: 20%;
+        margin-right: 20%;
+        background-color: rgba(255, 255, 255, 0.623);
+        border-radius: 10px;
+        position: relative;
+        z-index: 2;
+      }
+      
+      .destination__card h2 {
+        background-image: url(/Images/ffrance.jpg);
+        background-size: cover;  /* ajuste la taille de l'image à la taille de l'élément */
+        width: 100%;
+        padding: 70px 0;
+        color: rgb(44, 44, 44);
+        text-align: center;
+        box-sizing: border-box;
+        border-radius: 10px 10px 0 0 ;
+        opacity: 0.9;
+        height: 180px;
+      }
+      
+      .destination__card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        margin-bottom: 1rem;
+      }
+    
+      .destination2__card {
+        height: 100%;
+        width: 20%;
+        text-align: center;
+        display: inline-block;
+        margin: 20px;
+        background-color: rgba(255, 255, 255, 0.623);
+        border-radius: 10px;
+        position: relative;
+        z-index: 2;
+      }
+      
+      .destination2__card h2 {
+        background-image: url(/Images/Maroc.jpg);
+        background-size: cover;  /* ajuste la taille de l'image à la taille de l'élément */
+        width: 100%;
+        padding: 70px 0;
+        color: rgb(37, 37, 37);
+        text-align: center;
+        box-sizing: border-box;
+        border-radius: 10px 10px 0 0 ;
+        opacity: 0.9;
+        height: 180px;
+        position: right;
+      }
+      
+      .destination2__card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        margin-bottom: 1rem;
+      }
+      
+      button {
+        background-color: #333;
+        border: none;
+        color: #fff;
+        padding: 0.75rem 1.5rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+      }
+      
+      button:hover {
+        cursor: pointer;
+        background-color: #555;
+      }
+      
+      footer {
+        background-color: #333;
+        color: #fff;
+        /*display: flex;
+        justify-content: center;
+        padding: 1rem;*/
+        width: 100%;
+        position: absolute;
+      }
+      
+      footer p {
+        margin: 0;
+      }
